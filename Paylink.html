@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Santa's Paylink</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styleSheet.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="santa">
+            <img src="pics/Santa_Claus.jpg" alt="Santa Image">
+        </div>
+        
+        
+        <div id="content">
+            <h2>A Little Help from My Elves?</h2>
+            <div class="columns">
+                <div class="column">
+                    <p>Column 1 content...</p>
+                </div>
+                <div class="column">
+                    <p>Column 2 content...</p>
+                </div>
+            </div>
+            <div class="copy-text-container">
+                <span class="copy-text" onclick="copyLink()">Want to share this page with others?</span>
+            </div>
+        </div>
+        
+        <script>
+            
+            // Function to copy the current page's URL to the clipboard
+            function copyLink() {
+
+                var tempInput = document.createElement("input");
+                document.body.appendChild(tempInput);
+    
+                tempInput.value = window.location.href;
+    
+                tempInput.select();
+                tempInput.setSelectionRange(0, 99999);
+
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+    
+                alert("Link copied to clipboard!");
+            }
+        </script>
+        
+    </body>
+</html>

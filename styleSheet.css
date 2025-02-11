@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #FCFCEF;
+    font-family: "Arial", sans-serif;
+    overflow-y: hidden;
+}
+
+p{
+    margin: 0;
+}
+
+#santa {
+    height: 300px;
+    background-color: #75051E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#santa img {
+    max-width: 85%;
+    max-height: 85%
+}
+
+#content {
+    height: 100vh;
+    background-color: #FCFCEF;
+}
+
+#content h2 {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #75051E;
+    font-weight: normal;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+    background-color: #FCFCEF;
+    padding: 20px;
+}
+
+.copy-text {
+    cursor: pointer;
+    color: #75051E;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.copy-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
